@@ -1,7 +1,7 @@
-site_name: <org> present 100 Days of Code
+site_name: Baltimore Black Techies present 100 Days of Code
 site_description: 100 days of code progress
-site_author: <org>
-repo_url: https://baltimoreblacktechies.github.com/100DaysOfCode
+site_author: Baltimore Black Techies
+repo_url: https://github.com/baltimoreblacktechies/100daysOfCode-2022
 theme:
   name: material
   logo: 'https://avatars.githubusercontent.com/u/44561649?s=200&v=4'
@@ -24,4 +24,4 @@ extra_javascript: [
 nav:
   - Home:
     - index.md
-  - Progress: # leave space under progress. The menu is auto populated.
+  - Progress:
