@@ -2,10 +2,15 @@
 a personal log by `dylan!`
 ---
 
+## Day 0
+
+Set up basic template for https://github.com/baltimoreblacktechies/100daysOfCode !
+I have ideas for how to extend this based off previous work I've done.
+
 ## Day 1
 
 Today I went to a Coffee and Code meetup at spark. I didn't really work too
-much during the time, but someone put me on to an [interview question]() which
+much during the time, but someone put me on to an [interview question](https://gitlab.com/enlighten-challenge/alphabet-soup) which
 they said couldn't be solved in a line of code. Lol, saying you **can't** do
 something is a sure-fire way of getting me to do it. Here's my line:
 
@@ -33,6 +38,12 @@ x=>x.split(' ')),P.slice(x),(d,Q)=>Array
 ```
 
 even formatted into the company's logo! just run `ALPHABET_SOUP`.
+
+## Day 2
+
+Today I set up `nginx` for my home computer since I've migrated to nix.
+I went from like 6 config files to 1. See the relevant file here:
+https://github.com/dmadisetti/.dots/blob/template/nix/machines/common/nginx.nix
 
 ---
 
