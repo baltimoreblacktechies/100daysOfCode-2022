@@ -1,3 +1,0 @@
-Spent the day going through git tutorials.
-Learned about rebasing vs merging (basic, I know) from a very cool resource (https://learngitbranching.js.org/).
-Hopefully, also managed to fix the issue that my PR caused on the BBT repo for 100 Days.
