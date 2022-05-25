@@ -1,0 +1,29 @@
+Continued Learn Bash The Hard Way to cover functions. What I learned:
+
+* vars have a global scope unless otherwise declared
+
+* to declare limited scope, use "local": e.g.
+function myfunc {
+    local myvar="Hi from inside the function"
+    echo $myvar
+} --> if I call $myvar outside the function, it won't work because it only exists inside the function
+
+* “ cd - ” returns you to the previous directory you were in
+
+* use "builtin" to call functions built into Bash
+    * Useful incase you make a function that conflicts in name with a builtin (like "func cd()")
+    * With clashes, the function, not builtin is used
+    * Use "unset -f name_of_func" to unset func name & remove the conflict (or "-v" to unset vars)
+
+* "declare -f" outputs all funcs in my env (including their code) while "declare -F" just lists the funcs names
+
+* Programs are executable files (think grep, vi, sed, etc)
+
+* you can use "which" to see if it's a builtin or a func: e.g.
+"which grep" --> /usr/bin/grep means it's a program/binary file, not a builtin)
+fun fact: which is a binary file/program, not a builtin
+
+* "alias" is a powerful tool for creating shortcuts to commands: e.g.
+"alias python='python3'" --> means that when I type "python", it'll open python3 for me
+
+* "typeset" and "declare" have the same functionality, typeset is just obsolete
