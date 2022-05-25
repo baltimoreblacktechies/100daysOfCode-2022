@@ -1,0 +1,4 @@
+Spent the day trying to containerize an old app/game I made.
+I learned that a library (Playsound) I used is very poorly maintained.
+I might need to give up or refactor the app with a different library.
+Currently, Playsound won't work in virtual envs (like Docker) because of the Gi module.
