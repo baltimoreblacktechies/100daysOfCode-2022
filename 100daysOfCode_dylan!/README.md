@@ -45,6 +45,11 @@ Today I set up `nginx` for my home computer since I've migrated to nix.
 I went from like 6 config files to 1. See the relevant file here:
 https://github.com/dmadisetti/.dots/blob/template/nix/machines/common/nginx.nix
 
+## Day 3
+
+I set up BBT with a new site with mkdocs: www.bmoreblack.tech. The domain
+expired and I was able to snatch it from Aaron. haha
+
 ---
 
 # You got this. The above is just a sample.
