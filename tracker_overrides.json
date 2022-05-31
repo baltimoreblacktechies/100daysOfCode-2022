@@ -1,7 +1,9 @@
 {
   "alias": {
     "some_git_config_name": "The name that you want to show",
+    "crc8109": "Carlos Castillo",
     "Dylan Madisetti": "dylan",
+    "dylan madisetti": "dylan",
     "madisetti": "dylan"
   }
 }
