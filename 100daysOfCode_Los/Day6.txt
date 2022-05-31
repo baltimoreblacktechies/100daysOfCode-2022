@@ -1,0 +1,19 @@
+Continued Learn Bash The Hard Way to cover functions. What I learned:
+
+* Learned about the channels Std Error and Std Output
+
+* If you string cmds (e.g. `cat file | grep -c file`), if the first cmd outputs to Std Err, nothing is passed to the pipe cmd in this case
+
+* /dev/null is a special file created by Linux (and UNIX) kernels that's black hole into which data can be pumped; anything written to it will be absorbed and ignored.
+
+* The < operator redirects standard input to the command from a file e.g.
+`grep -c file < file1` will pass file1 as input to the cmd grep
+
+* Using `>` will overwrite a file; using `>>` will append to it e.g.
+echo line2 > file3
+echo line3 >> file3 --> cat file3
+file3
+|
+|
+--> line2
+    line3
