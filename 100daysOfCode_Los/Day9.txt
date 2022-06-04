@@ -1,0 +1,9 @@
+Continued Learn Bash The Hard Way to continue scripts, conditionals, tests, unary and binary operators. What I learned:
+
+* I should probably use [[ always because it's such a good safety net (e.g. [ 10 < 2 ] doesn't work but [[ 10 < 2 ]] does because the former has `<` expecting a STRING, not int)
+
+* From the above, this means that type matters in bash so all the more reason to use [[
+
+* However things like -gt, -lt, -eq, -ne all work fine with a single [
+
+* You can make a single line script and use semi's to show new lines (e.g. if [[ 10 -lt 2 ]]; then echo 'does not compute'; fi )
