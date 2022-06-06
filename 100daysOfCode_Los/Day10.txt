@@ -1,0 +1,7 @@
+Built the game Pong in Python to touch up on my Python skills again. Revisted turtles, tkinter, and Docker. *Learned that:
+
+* Python not being a compiled language means I'll frequently run into issues with missing libs/pckgs when containerizing/working in virt envs
+
+* About the Turtle library and how it relates to tkinter
+
+* Adding sound in Python is very complicated because it's handled differently by each OS (damn you capitalism)
