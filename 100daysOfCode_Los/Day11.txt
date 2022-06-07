@@ -1,0 +1,13 @@
+Continued building off my pong game. What I did:
+
+* Added a speed multiplier to the ball. 
+
+* Added the ability to pass along player names. 
+
+* Added randomization of ball projectory at start of each round.
+
+Points of pain:
+
+* Still can't properly containerize the game due to an issue with tkinter/screen access in Docker
+
+* Starting to think containerizing anything that isn't vanilla Python isn't worth it

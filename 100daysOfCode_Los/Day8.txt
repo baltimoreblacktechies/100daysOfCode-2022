@@ -1,0 +1,19 @@
+Continued Learn Bash The Hard Way to continue scripts and tests. What I learned:
+
+* You can't use '' to substitute commands in a script, you need "" (e.g. '$(hostname)' won't work)
+
+* You can use ticks though (e.g. "hi `hostname`" --> hi WayneTech-IdeaPad)'
+
+* You can nest commands like this: $(cmd1 $(cmd2 $(cmd3)))
+
+* Overall, () is easier to nest and read than `` because you have to escape \` with backslashes
+
+* $? can tell you if the last command failed (1) or not (0)
+
+* "[" is a builtin and a program and "[" and "test" are synonymous 
+
+* You can write "and" and "or" as ||/-o and &&/-a respectively (e.g. [ 1 = 1 -o ! '0' = '0' -a '2' = '2' ]))
+
+* Use [[ as a safety net to tolerate cmds that don't exist (e.g. [[ ${DOESNOTEXIST} = '' ]] is evaluated as [ '' = '' ])
+
+* It's prob for the best to always use [[ to just be safe

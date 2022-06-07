@@ -1,0 +1,9 @@
+Continued Learn Bash The Hard Way to cover scripts. What I learned:
+
+* A pipe passes ‘standard output’ as the ‘standard input’ to another command
+
+* A redirect sends a channel of output to a file
+
+* The < operator redirects standard input to the command from a file
+
+* How to set permissions using chmod
