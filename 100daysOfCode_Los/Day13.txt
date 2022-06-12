@@ -1,0 +1,7 @@
+Continued Learn Bash The Hard Way. Learned about Exit Codes. What I learned:
+
+* About exit codes (e.g. 0 is success; 1 is general errror; 2 is miuse of builtin; 127 is cmd not found)
+
+* How to make a script use an explicit exit code by using 'return' (e.g. `then echo 'matched!'; return 1;` )
+
+* Special operators like $$ (gives you the process ID of the shell or the shell the invoked the subshell) and $! (gives you the process ID of the most recent bg job)
