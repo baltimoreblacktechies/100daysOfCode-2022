@@ -6,4 +6,4 @@ Continued Learn Bash The Hard Way. What I learned:
 
 * In case statements, double ; indicates when another case is being made (e.g. `1) echo 'a is 1'; echo 'ok';; 2) echo 'a is 2'; echo 'ok';;` )
 
-* getopts is used ofyen in cases
+* getopts is used often in cases
