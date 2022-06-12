@@ -1,0 +1,17 @@
+Continued Learn Bash The Hard Way. What I learned:
+
+* `set` is a builtin that tells you the state of your shell (i.e. all your vars and f(x)s set in your env)
+
+* posix mode ensures that `set` doesn't output any functions; you toggle it on with `-o` and off with `+o`
+
+* `set` vs `env` diff: `env` shows exported variables, not all vars set in the shell
+
+* The `errexit` option tells bash to exit the script if any command fails
+
+* `xtrace` option outputs each command as it is being run (useful for seeing what command was actually run in a script)
+
+* You can also us the flags `set -e/ set -x` for errexit/xtrace respectively
+
+* `-o pipefail` is used to return error code of last command to return a non-zero status; 
+
+* Since grep returns non-zero even when there’s no ‘error’ as such, you can get surprising behaviour when using pipes and exit codes so pipefail is useful.
