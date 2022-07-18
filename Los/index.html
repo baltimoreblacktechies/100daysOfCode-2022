@@ -13,7 +13,7 @@
       
       
       <link rel="icon" href="https://avatars.githubusercontent.com/u/44561649?s=200&v=4">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -389,6 +389,104 @@
 </li>
 </ul>
 <hr />
+<p>Continued Learn Bash The Hard Way. What I learned:</p>
+<ul>
+<li>
+<p>Two different ways to write a For loop: using C notation ( <code>for (( i=0; i &lt; 20; i++ ))</code>) or using "in" ( <code>for f in $(ls *txt)</code> )</p>
+</li>
+<li>
+<p>While loops exist and work like you'd expect them to</p>
+</li>
+<li>
+<p>In case statements, double ; indicates when another case is being made (e.g. <code>1) echo 'a is 1'; echo 'ok';; 2) echo 'a is 2'; echo 'ok';;</code> )</p>
+</li>
+<li>
+<p>getopts is used often in cases</p>
+</li>
+</ul>
+<hr />
+<p>Continued Learn Bash The Hard Way. Learned about Exit Codes. What I learned:</p>
+<ul>
+<li>
+<p>About exit codes (e.g. 0 is success; 1 is general errror; 2 is miuse of builtin; 127 is cmd not found)</p>
+</li>
+<li>
+<p>How to make a script use an explicit exit code by using 'return' (e.g. <code>then echo 'matched!'; return 1;</code> )</p>
+</li>
+<li>
+<p>Special operators like $$ (gives you the process ID of the shell or the shell the invoked the subshell) and $! (gives you the process ID of the most recent bg job)</p>
+</li>
+</ul>
+<hr />
+<p>Continued Learn Bash The Hard Way. What I learned:</p>
+<ul>
+<li>
+<p><code>set</code> is a builtin that tells you the state of your shell (i.e. all your vars and f(x)s set in your env)</p>
+</li>
+<li>
+<p>posix mode ensures that <code>set</code> doesn't output any functions; you toggle it on with <code>-o</code> and off with <code>+o</code></p>
+</li>
+<li>
+<p><code>set</code> vs <code>env</code> diff: <code>env</code> shows exported variables, not all vars set in the shell</p>
+</li>
+<li>
+<p>The <code>errexit</code> option tells bash to exit the script if any command fails</p>
+</li>
+<li>
+<p><code>xtrace</code> option outputs each command as it is being run (useful for seeing what command was actually run in a script)</p>
+</li>
+<li>
+<p>You can also us the flags <code>set -e/ set -x</code> for errexit/xtrace respectively</p>
+</li>
+<li>
+<p><code>-o pipefail</code> is used to return error code of last command to return a non-zero status; </p>
+</li>
+<li>
+<p>Since grep returns non-zero even when there’s no ‘error’ as such, you can get surprising behaviour when using pipes and exit codes so pipefail is useful.</p>
+</li>
+</ul>
+<hr />
+<p>Continued Learn Bash The Hard Way. What I learned:</p>
+<ul>
+<li>
+<p>echo can take clags like '-n' (which makes sure it doesn't print a new line) or '-e' (which makes sure special chars are processed liked '\t') or '-E' (opp of '-e')</p>
+</li>
+<li>
+<p>You can even echo specific byte value to the terminal by specifying its hex value (e.g. "echo -n -e '\x200\n'" --&gt; 0 | or "echo -n -e '\x60\n'" --&gt; `) which is useful for debugging/controlling exactly what gets sent to screen</p>
+</li>
+<li>
+<p>CTRL+V escape characters are a thing (e.g. ^I means CTRL+V + CTRL+i)</p>
+</li>
+<li>
+<p>Terminal Escape Codes like '-e \033[?47h' (saves but doesn't clear screen) or '-e \033[?47l' (restores what you saved from the screen)</p>
+</li>
+</ul>
+<hr />
+<p>Started the Odin Project to brush up my web dev skills and learn Rails</p>
+<hr />
+<p>Continued Learn Bash The Hard Way. What I learned:</p>
+<ul>
+<li>
+<p>The PS1 var which is basically the prompt so you can customize what your bash prompt says or 'prompts' you to do</p>
+</li>
+<li>
+<p>The PS2 var is ‘other’ prompt shell uses to indicate you're being prompted for input to a program that is running; basically use it for prompts that display while a program is running</p>
+</li>
+<li>
+<p>PS4 is a var used best with Trace mode (prints ever cmd as it's run) so you can see PS4 being printed as each cmd is run (PS4 is echoed before each line of trace output)</p>
+</li>
+<li>
+<p>You can customize your prompt using special escape chars like (" PS1='\u@\H:\w # $ ' " --&gt; this creates the same prompt the default shell has)</p>
+</li>
+<li>
+<p>'PROMPT_COMMAND' is a var to also affect the prompt; Every time the prompt is displayed, PROMPT_COMMAND is treated as a command, and run.</p>
+</li>
+</ul>
+<hr />
+<p>Continued the Odin Project</p>
+<hr />
+<p>Still doing the Odin Project. Really enjoying it so far.</p>
+<hr />
 <p>Worked on the next chapter of Learn Bash The Hard Way. What I learned:</p>
 <ul>
 <li>
@@ -423,6 +521,10 @@ echo ${BASH_VERSINFO[0,5]} --&gt; x86_64-pc-linux-gnu (returns elements 0-5)</p>
 <p>Associative arrays are like dicts but look very messy; should prob avoid them</p>
 </li>
 </ul>
+<hr />
+<p>Finally figured out how to properly containerize one of my projects!!!!!!!</p>
+<hr />
+<p>Cont the Odin Project. Made a small cookbook site out of it. It's very humble. </p>
 <hr />
 <p>Continued Learn Bash The Hard Way to cover functions. What I learned:</p>
 <ul>
@@ -632,10 +734,10 @@ file3
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
       
