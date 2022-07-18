@@ -1,0 +1,11 @@
+Continued Learn Bash The Hard Way. What I learned:
+
+* The PS1 var which is basically the prompt so you can customize what your bash prompt says or 'prompts' you to do
+
+* The PS2 var is ‘other’ prompt shell uses to indicate you're being prompted for input to a program that is running; basically use it for prompts that display while a program is running
+
+* PS4 is a var used best with Trace mode (prints ever cmd as it's run) so you can see PS4 being printed as each cmd is run (PS4 is echoed before each line of trace output)
+
+* You can customize your prompt using special escape chars like (" PS1='\u@\H:\w \# \$ ' " --> this creates the same prompt the default shell has)
+
+* 'PROMPT_COMMAND' is a var to also affect the prompt; Every time the prompt is displayed, PROMPT_COMMAND is treated as a command, and run.

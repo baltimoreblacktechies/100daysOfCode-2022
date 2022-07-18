@@ -1,0 +1,9 @@
+Continued Learn Bash The Hard Way. What I learned:
+
+* echo can take clags like '-n' (which makes sure it doesn't print a new line) or '-e' (which makes sure special chars are processed liked '\t') or '-E' (opp of '-e')
+
+* You can even echo specific byte value to the terminal by specifying its hex value (e.g. "echo -n -e '\x200\n'" --> 0 | or "echo -n -e '\x60\n'" --> `) which is useful for debugging/controlling exactly what gets sent to screen
+
+* CTRL+V escape characters are a thing (e.g. ^I means CTRL+V + CTRL+i)
+
+* Terminal Escape Codes like '-e \033[?47h' (saves but doesn't clear screen) or '-e \033[?47l' (restores what you saved from the screen)

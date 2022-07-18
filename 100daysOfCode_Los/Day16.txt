@@ -1,0 +1,1 @@
+Started the Odin Project to brush up my web dev skills and learn Rails

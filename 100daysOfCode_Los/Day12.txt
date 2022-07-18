@@ -1,0 +1,9 @@
+Continued Learn Bash The Hard Way. What I learned:
+
+* Two different ways to write a For loop: using C notation ( `for (( i=0; i < 20; i++ ))`) or using "in" ( `for f in $(ls *txt)` )
+
+* While loops exist and work like you'd expect them to
+
+* In case statements, double ; indicates when another case is being made (e.g. `1) echo 'a is 1'; echo 'ok';; 2) echo 'a is 2'; echo 'ok';;` )
+
+* getopts is used often in cases
